@@ -1,6 +1,5 @@
 using System.Text;
-using Microsoft.Xna.Framework;
-using System;
+using Stride.Games;
 
 namespace GameTimer
 {
@@ -90,8 +89,8 @@ namespace GameTimer
 			if (!Paused)
 			{
 				//Get the time delta
-				TimeDelta = currentTime.ElapsedGameTime.Seconds;
-				var milliseconds = currentTime.ElapsedGameTime.Milliseconds;
+				TimeDelta = currentTime.Total.Seconds;
+				var milliseconds = currentTime.Total.Milliseconds;
 				TimeDelta += (milliseconds / 1000.0f);
 
 				//update the delta by our speed multiplier

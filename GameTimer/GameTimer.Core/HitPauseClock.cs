@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Stride.Games;
 
 namespace GameTimer
 {
